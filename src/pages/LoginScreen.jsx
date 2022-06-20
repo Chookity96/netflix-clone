@@ -5,7 +5,7 @@ import SignUpScreen from './SignUpScreen'
 function LoginScreen() {
 	const [signIn, setSignIn] = useState(false)
 	const [email, setEmail] = useState("")
-	console.log(email)
+	// console.log(email)
 	return (
 		<div className='loginScreen'>
 			<div className="loginScreen__background">

@@ -58,9 +58,9 @@ function PlanScreen() {
 		}
 	}, [dispatch, subscription])
 
-	console.log(subscription)
-	console.log("Redux stuff below...")
-	console.log(currentSubscription)
+	// console.log(subscription)
+	// console.log("Redux stuff below...")
+	// console.log(currentSubscription)
 
 
 	useEffect(() => {

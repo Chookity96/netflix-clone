@@ -18,7 +18,7 @@ function Row({ title, fetchURL, isLargeRow = false }) {
         fetchData()
     }, [fetchURL]);
 
-    console.log(movies)
+    // console.log(movies)
 
     return (
         <div className='row'>
@@ -27,7 +27,7 @@ function Row({ title, fetchURL, isLargeRow = false }) {
                 {
                     movies.map(movie => (
                         ((isLargeRow && movie.poster_path) || (!isLargeRow && movie.backdrop_path)) && (
-                            <div className="poster">
+                            <div key={movie.id} className="poster">
                             <img
                                 className={`row__poster ${isLargeRow && "row__posterLarge"}`}
                                 key={movie.id}
