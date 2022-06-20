@@ -1,0 +1,40 @@
+.planScreen__plan{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.8;
+    padding: 10px;
+}
+
+.planScreen__plan:hover{
+    opacity: 1;
+}
+
+.planScreen__plan > button{
+    padding: 10px 20px; 
+    background-color: #e50914;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    min-width: 120px;
+}
+
+
+.planScreen__plan--disabled > button{
+    background-color: gray !important;
+}
+
+
+@media (max-width: 480px) {
+    .planScreen__plan{
+        flex-direction: column;
+
+    }
+
+    .planScreen__info{
+        margin-bottom: 10px;
+    }
+
+}

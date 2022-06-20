@@ -1,0 +1,145 @@
+.nav{
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    height: 30px;
+    z-index: 100;
+    background-image: linear-gradient(0deg, transparent, rgba(37,37,37,0.70), #111);
+    transition-timing-function: ease-in;
+    transition: all 0.5s;
+}
+
+.nav__black{
+    background-color: #111;
+}
+
+.nav__container{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo{
+    position: fixed;
+    left: 0;
+    width: 80px;
+    top: 10px;
+    padding-left: 20px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.nav__avatar{
+    cursor: pointer;
+    position: fixed;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+}
+
+.nav__links--container{
+    width: 60%;
+    margin-left: 100px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+
+.nav__links{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    visibility: visible;
+    opacity: 1;
+    list-style: none;
+    transition: all 300ms ease;
+}
+
+.nav__link--anchor{
+    text-decoration: none;
+    color: white;
+    transition: all 300ms ease;
+    font-size: 14px;
+}
+
+.not_allowed{
+    cursor: not-allowed;
+}
+
+.nav__link--anchor:hover{
+    opacity: 0.8;
+}
+
+.nav__link--bold{
+    font-weight: bold;
+    color: white !important;
+}
+
+
+.nav__menu{
+    position: absolute;
+    top: 0;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 300ms ease;
+
+
+}
+
+.nav__menu--btn{
+    color: white;
+    cursor: pointer;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__option{
+    background: rgba(0, 0, 0, 0.8) ;
+    font-size: 14px;
+    padding: 12px 48px;
+    text-align: center;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav__option--anchor{
+    text-decoration: none;
+    color: white;
+}
+
+.nav__option:hover{
+    background: rgba(0, 0, 0, 0.6);
+}
+
+
+
+.border--top{
+    border-top: 2px solid white;
+}
+
+
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    
+    border-top: 5px solid #fff;
+    margin-left: 4px;
+  }
+
+@media (max-width: 768px){
+    .nav__links{
+        visibility: hidden;
+        opacity: 0;
+    }
+    .nav__menu{
+        visibility: visible;
+        opacity: 1;
+    }
+
+
+}
