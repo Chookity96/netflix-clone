@@ -31,7 +31,7 @@ function Nav({ currentPage }) {
 	return (
 		<div className={`nav ${show && "nav__black"}`}>
 			<div className="nav__container">
-				<img onClick={() => { currentSubscription.currentPlan ? navigate("/") : alert("Please Subscribe to Access Netflix Shows!") }} className='nav__logo' src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="" />
+				<img onClick={() => { currentSubscription.currentPlan ? navigate("/") : alert("Please Subscribe to Access Netflix Shows!") }} className='nav__logo' src="https://assets.stickpng.com/images/580b57fcd9996e24bc43c529.png" alt="NETFLIX" />
 				{
 					location.pathname !== "/profile" && (
 						<div className='nav__links--container'>
